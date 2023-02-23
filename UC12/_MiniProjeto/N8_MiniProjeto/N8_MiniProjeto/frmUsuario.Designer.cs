@@ -236,6 +236,7 @@
             this.btoCadastrar.TabIndex = 0;
             this.btoCadastrar.Text = "Cadastrar";
             this.btoCadastrar.UseVisualStyleBackColor = true;
+            this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
             // 
             // btoAlterar
             // 

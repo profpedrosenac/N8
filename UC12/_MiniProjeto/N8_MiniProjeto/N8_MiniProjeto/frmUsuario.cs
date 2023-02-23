@@ -52,5 +52,50 @@ namespace N8_MiniProjeto
         {
             TestarConexao();
         }
+
+        private void btoCadastrar_Click(object sender, EventArgs e)
+        {
+            // aqui tem que vir a validação dos dados.
+
+            string sql = "insert into usuario " +
+                "(" +
+                    "nome_usuario," +
+                    "login_usuario," +
+                    "senha_usuario," +
+                    "cpf_usuario," +
+                    "obs_usuario," +
+                    "status_usuario" +
+                ")values(" +
+                    "'" + txtNome.Text + "'," +
+                    "'" + txtLogin.Text + "'," +
+                    "'" + txtSenha.Text + "'," +
+                    "'" + txtCPF.Text + "'," +
+                    "'" + txtObs.Text + "'," +
+                    "'" + cboStatus.Text + "'" +
+                ")";
+
+
+            SqlConnection conn = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+            conn.Open();
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    MessageBox.Show("Dados Cadastrados com sucesso");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " +ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
