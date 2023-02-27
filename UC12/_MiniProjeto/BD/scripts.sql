@@ -12,6 +12,23 @@ create table usuario
 	status_usuario varchar(30) not null  
 )
 
+insert into usuario (
+nome_usuario,
+login_usuario,
+senha_usuario,
+cpf_usuario,
+obs_usuario,
+status_usuario
+)values(
+'Administrador',
+'admin',
+'123',
+'111.111.111-11',
+'',
+'Ativo'
+)
+
+
 select * from usuario
 
 create table categoria

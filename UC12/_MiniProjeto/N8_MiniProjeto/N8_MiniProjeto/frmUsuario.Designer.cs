@@ -51,6 +51,7 @@
             this.btoLimpar = new System.Windows.Forms.Button();
             this.btoExcluir = new System.Windows.Forms.Button();
             this.btoSair = new System.Windows.Forms.Button();
+            this.btoCadastrar2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,6 +76,7 @@
             this.btoPesquisar.TabIndex = 1;
             this.btoPesquisar.Text = "...";
             this.btoPesquisar.UseVisualStyleBackColor = true;
+            this.btoPesquisar.Click += new System.EventHandler(this.btoPesquisar_Click);
             // 
             // txtCodigo
             // 
@@ -217,6 +219,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btoCadastrar2);
             this.groupBox3.Controls.Add(this.btoCadastrar);
             this.groupBox3.Controls.Add(this.btoAlterar);
             this.groupBox3.Controls.Add(this.btoLimpar);
@@ -246,6 +249,7 @@
             this.btoAlterar.TabIndex = 1;
             this.btoAlterar.Text = "Alterar";
             this.btoAlterar.UseVisualStyleBackColor = true;
+            this.btoAlterar.Click += new System.EventHandler(this.btoAlterar_Click);
             // 
             // btoLimpar
             // 
@@ -265,6 +269,7 @@
             this.btoExcluir.TabIndex = 3;
             this.btoExcluir.Text = "Excluir";
             this.btoExcluir.UseVisualStyleBackColor = true;
+            this.btoExcluir.Click += new System.EventHandler(this.btoExcluir_Click);
             // 
             // btoSair
             // 
@@ -275,6 +280,16 @@
             this.btoSair.Text = "Sair";
             this.btoSair.UseVisualStyleBackColor = true;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
+            // 
+            // btoCadastrar2
+            // 
+            this.btoCadastrar2.Location = new System.Drawing.Point(6, 31);
+            this.btoCadastrar2.Name = "btoCadastrar2";
+            this.btoCadastrar2.Size = new System.Drawing.Size(75, 32);
+            this.btoCadastrar2.TabIndex = 2;
+            this.btoCadastrar2.Text = "ADD2";
+            this.btoCadastrar2.UseVisualStyleBackColor = true;
+            this.btoCadastrar2.Click += new System.EventHandler(this.btoCadastrar2_Click);
             // 
             // frmUsuario
             // 
@@ -324,5 +339,6 @@
         private Button btoLimpar;
         private Button btoExcluir;
         private Button btoSair;
+        private Button btoCadastrar2;
     }
 }
