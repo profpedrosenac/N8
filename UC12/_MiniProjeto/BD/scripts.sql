@@ -26,10 +26,30 @@ status_usuario
 '111.111.111-11',
 '',
 'Ativo'
-)
+)select SCOPE_IDENTITY()
 
+
+insert into usuario (
+nome_usuario,
+login_usuario,
+senha_usuario,
+cpf_usuario,
+obs_usuario,
+status_usuario
+)values(
+'Judith',
+'judith',
+'123',
+'111.111.111-14',
+'',
+'Ativo'
+)
+select SCOPE_IDENTITY()
 
 select * from usuario
+delete usuario where id_usuario = 2
+
+select SCOPE_IDENTITY()
 
 create table categoria
 (
