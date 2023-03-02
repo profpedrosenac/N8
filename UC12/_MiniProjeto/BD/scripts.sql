@@ -62,6 +62,17 @@ create table categoria
 
 select * from categoria
 
+insert into categoria (nome_categoria,descricao_categoria,obs_categoria,status_categoria)
+values
+('Ouro','','','Ativo'),
+('Prata','','','Ativo'),
+('Bronze','','','Ativo'),
+('Especial','','','Ativo'),
+('Latão','','','Ativo'),
+('Madeira','','','Ativo'),
+('Outros','','','Ativo')
+
+
 create table produto
 (
 	id_produto int not null identity primary key ,

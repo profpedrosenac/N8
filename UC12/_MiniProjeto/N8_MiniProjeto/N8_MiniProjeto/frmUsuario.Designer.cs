@@ -46,12 +46,12 @@
             this.txtObs = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btoCadastrar2 = new System.Windows.Forms.Button();
             this.btoCadastrar = new System.Windows.Forms.Button();
             this.btoAlterar = new System.Windows.Forms.Button();
             this.btoLimpar = new System.Windows.Forms.Button();
             this.btoExcluir = new System.Windows.Forms.Button();
             this.btoSair = new System.Windows.Forms.Button();
-            this.btoCadastrar2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -231,6 +231,16 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
+            // btoCadastrar2
+            // 
+            this.btoCadastrar2.Location = new System.Drawing.Point(6, 31);
+            this.btoCadastrar2.Name = "btoCadastrar2";
+            this.btoCadastrar2.Size = new System.Drawing.Size(75, 32);
+            this.btoCadastrar2.TabIndex = 2;
+            this.btoCadastrar2.Text = "ADD2";
+            this.btoCadastrar2.UseVisualStyleBackColor = true;
+            this.btoCadastrar2.Click += new System.EventHandler(this.btoCadastrar2_Click);
+            // 
             // btoCadastrar
             // 
             this.btoCadastrar.Location = new System.Drawing.Point(86, 31);
@@ -281,16 +291,6 @@
             this.btoSair.UseVisualStyleBackColor = true;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
             // 
-            // btoCadastrar2
-            // 
-            this.btoCadastrar2.Location = new System.Drawing.Point(6, 31);
-            this.btoCadastrar2.Name = "btoCadastrar2";
-            this.btoCadastrar2.Size = new System.Drawing.Size(75, 32);
-            this.btoCadastrar2.TabIndex = 2;
-            this.btoCadastrar2.Text = "ADD2";
-            this.btoCadastrar2.UseVisualStyleBackColor = true;
-            this.btoCadastrar2.Click += new System.EventHandler(this.btoCadastrar2_Click);
-            // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -303,6 +303,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Gerenciamento de Usuários";
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.groupBox1.ResumeLayout(false);
