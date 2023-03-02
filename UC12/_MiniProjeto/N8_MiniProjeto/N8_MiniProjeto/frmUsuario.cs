@@ -5,11 +5,7 @@ namespace N8_MiniProjeto
 {
     public partial class frmUsuario : Form
     {
-        string stringConexao = "" +
-            "Data Source=localhost;" +
-            "Initial Catalog=n8_miniprojeto;" +
-            "User ID=sa;" +
-            "Password=123456";
+        string stringConexao = frmLogin.stringConexao;
 
         public frmUsuario()
         {

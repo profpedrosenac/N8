@@ -18,11 +18,7 @@ namespace N8_MiniProjeto
             InitializeComponent();
         }
 
-        string stringConexao = "" +
-            "Data Source=localhost;" +
-            "Initial Catalog=n8_miniprojeto;" +
-            "User ID=sa;" +
-            "Password=123456";
+        string stringConexao = frmLogin.stringConexao;
 
         private void TestarConexao()
         {

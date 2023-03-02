@@ -24,3 +24,4 @@ C:\Users\pedro.lhjunior\source\repos\N8\N8\UC12\_MiniProjeto\N8_MiniProjeto\N8_M
 C:\Users\pedro.lhjunior\source\repos\N8\N8\UC12\_MiniProjeto\N8_MiniProjeto\N8_MiniProjeto\obj\Debug\net6.0-windows\N8_MiniProjeto.csproj.CopyComplete
 C:\Users\pedro.lhjunior\source\repos\N8\N8\UC12\_MiniProjeto\N8_MiniProjeto\N8_MiniProjeto\obj\Debug\net6.0-windows\N8_MiniProjeto.MDI_Principal.resources
 C:\Users\pedro.lhjunior\source\repos\N8\N8\UC12\_MiniProjeto\N8_MiniProjeto\N8_MiniProjeto\obj\Debug\net6.0-windows\N8_MiniProjeto.frmProduto.resources
+C:\Users\pedro.lhjunior\source\repos\N8\N8\UC12\_MiniProjeto\N8_MiniProjeto\N8_MiniProjeto\obj\Debug\net6.0-windows\N8_MiniProjeto.frmLogin.resources
