@@ -47,6 +47,8 @@ status_usuario
 select SCOPE_IDENTITY()
 
 select * from usuario
+select * from usuario where login_usuario = 'admin' and senha_usuario = '1234'
+
 delete usuario where id_usuario = 2
 
 select SCOPE_IDENTITY()
