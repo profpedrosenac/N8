@@ -80,6 +80,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(445, 32);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.Text = "admin";
             // 
             // txtSenha
             // 
@@ -88,6 +89,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(445, 32);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.Text = "123";
             // 
             // frmLogin
             // 
@@ -105,7 +107,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Estoque";

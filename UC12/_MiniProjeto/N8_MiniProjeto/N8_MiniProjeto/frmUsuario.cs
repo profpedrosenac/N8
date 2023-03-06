@@ -28,6 +28,37 @@ namespace N8_MiniProjeto
             }
         }
 
+        private void CarregarGridUsuario()
+        {
+            string sql = "select " +
+                "id_usuario as 'ID'," +
+                "nome_usuario as 'Nome'," +
+                "login_usuario as 'Login'," +
+                "cpf_usuario as 'CPF'," +
+                "status_usuario as 'Status'" +
+                " from usuario where nome_usuario like '%" + txtPesquisaUsuario.Text + "%'";
+            SqlConnection conn = new SqlConnection(stringConexao);
+            SqlDataAdapter adapter = new SqlDataAdapter(sql,conn);
+            DataSet ds = new DataSet();
+            conn.Open();
+
+            try
+            {
+                adapter.Fill(ds);
+                dataUsuario.DataSource = ds.Tables[0];
+                dataUsuario.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dataUsuario.AutoResizeRow(0,DataGridViewAutoSizeRowMode.AllCellsExceptHeader);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         private void btoSair_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -47,6 +78,7 @@ namespace N8_MiniProjeto
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             TestarConexao();
+            CarregarGridUsuario();
         }
 
         private void btoCadastrar_Click(object sender, EventArgs e)
@@ -241,6 +273,17 @@ namespace N8_MiniProjeto
             {
                 conn.Close();
             }
+        }
+
+        private void txtPesquisaUsuario_TextChanged(object sender, EventArgs e)
+        {
+            CarregarGridUsuario();
+        }
+
+        private void dataUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodigo.Text = dataUsuario.CurrentRow.Cells["ID"].Value.ToString();
+            btoPesquisar.PerformClick();
         }
     }
 }
